@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edrieyani's Education</title>
+    <style>
+        body {
+            background-image:url('img/flower6.jpg');	    
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #FF8E8E;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #marquee-container {
+            text-align: center;
+            flex: 1;
+        }
+
+        marquee {
+            font-size: 36px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        nav {
+            background-color: #FFB3B3;
+            padding: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #FFECEC;
+            border: 1px solid #FF8E8E;
+            width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav table td {
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav table td a {
+            color: #333;
+            font-size: 18px;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav table td a:hover {
+            color: #FF4C4C;
+            transform: scale(1.1);
+        }
+
+        #content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .section {
+            background-color: #FFF9F9;
+            padding: 20px;
+            border-radius: 10px;
+            width: 48%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        h1, h3 {
+            color: #FF4C4C;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        table {
+            margin-top: 10px;
+            border-collapse: collapse;
+            width: 100%;
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        table th, table td {
+            border: 1px solid #FF8E8E;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #FFB3B3;
+            color: white;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .column {
+            flex: 1 1 calc(33.33% - 10px);
+            max-width: calc(33.33% - 10px);
+        }
+
+        .column img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .column img:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                width: 90%;
+            }
+
+            .column {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="indexnew.html">
+            <img src="img/logo3.png" alt="Daisy" title="Daisy - Edrieyani's Resume" style="width: 100px;">
+        </a>
+        <div id="marquee-container">
+            <marquee>📚 EDUCATION 👩‍🎓</marquee>
+        </div>
+    </header>
+
+    <nav>
+        <table>
+            <tr>
+                <td><a href="indexnew.html">Home</a></td>
+                <td><a href="aboutme.html">About Me</a></td>
+                <td><a href="myfamily.html">My Family</a></td>
+                <td><a href="experience.html">Experience</a></td>
+                <td><a href="education.html">Education</a></td>
+                <td><a href="gallery.html">Gallery</a></td>
+            </tr>
+        </table>
+    </nav>
+
+    <div id="content">
+        <div class="section">
+            <h3>My Education 📚</h3>
+            <img src="img/pusheen4.gif" alt="Education">
+            <p>My educational journey has shaped who I am today, from high school to university. Grateful for all the learning experiences that have prepared me for the future. 📚 #EducationJourney</p>
+        </div>
+
+
+	<div class="section">
+            <h3>Primary School 🏫</h3>
+             <img src="img/sksm.png" alt="SK Seri Maimon" style="width:197px;height:138px;">
+            <p>Attended SK Seri Mainmon from 2011-2016, where I completed my primary education. It was a place that taught me the importance of discipline and hard work. 🎓</p>
+            <h4>School Details</h4>
+            <table>
+                <tr>
+                    <th>SCHOOL NAME</th>
+                    <td>SK Seri Maimon</td>
+                </tr>
+                <tr>
+                    <th>PERIOD OF TIME</th>
+                    <td>2011-2016</td>
+                </tr>
+                <tr>
+                    <th>SCHOOL ADDRESS</th>
+                    <td>Sekolah Kebangsaan Seri Maimon Pt Othman, Pt Sulong83500, Parit Sulong Johor,</td>
+                </tr>
+                <tr>
+                    <th>CLASS YEAR 1 - 6</th>
+                    <td>
+                        <ol>
+                            <li>1 Dahlia</li>
+                            <li>2 Dahlia</li>
+                            <li>3 Dahlia</li>
+                            <li>4 Dahlia</li>
+                            <li>5 Dahlia</li>
+			    <li>6 Dahlia</li>
+
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <th>SCHOOL EXAMINATION</th>
+                    <td>
+                        <ul>
+                             <li>Ujian Penilaian Sekolah Rendah (UPSR) (2016)</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+
+
+        <div class="section">
+            <h3>Secondary School 🏫</h3>
+             <img src="img/smkps.png" alt="SMK Penghulu Saat" style="width:197px;height:138px;">
+            <p>Attended SMK Penghulu Saat from 2017-2021, where I completed my secondary education. It was a place that taught me the importance of discipline and hard work. 🎓</p>
+            <h4>School Details</h4>
+            <table>
+                <tr>
+                    <th>SCHOOL NAME</th>
+                    <td>SMK Penghulu Saat</td>
+                </tr>
+                <tr>
+                    <th>PERIOD OF TIME</th>
+                    <td>2017-2021</td>
+                </tr>
+                <tr>
+                    <th>SCHOOL ADDRESS</th>
+                    <td>SMK Penghulu Saat, Jalan Raja Ahmad, Parit Sulong, Johor</td>
+                </tr>
+                <tr>
+                    <th>CLASS FORM 1 - 5</th>
+                    <td>
+                        <ol>
+                            <li>1 Bestari</li>
+                            <li>2 Cekal</li>
+                            <li>3 Cekal</li>
+                            <li>4 Bestari</li>
+                            <li>5 Bestari</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <th>SCHOOL EXAMINATION</th>
+                    <td>
+                        <ul style="list-style-type: square">
+                            <li>Penilaian Tingkatan 3 (2019)</li>
+                            <li>Sijil Pelajaran Malaysia (2021)</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h3>University 🎓</h3>
+             <img src="img/uitm1.png" alt="UiTM" style="width:397px;height:238px;">
+            <p>Currently pursuing my diploma in Information Management at Universiti Teknologi Mara (UiTM) from 2022-2025. A journey filled with opportunities to learn, grow, and contribute. #UniversityLife 🎓</p>
+            <h4>University Details</h4>
+            <table>
+                <tr>
+                    <th>UNIVERSITY NAME</th>
+                    <td>Universiti Teknologi Mara (UiTM)</td>
+                </tr>
+                <tr>
+                    <th>PERIOD OF TIME</th>
+                    <td>2022-2025</td>
+                </tr>
+                <tr>
+                    <th>UNIVERSITY ADDRESS</th>
+                    <td>Jalan Universiti Off, KM 12, Jalan Muar, Segamat, Johor</td>
+                </tr>
+                <tr>
+                    <th>SUMMARY</th>
+                    <td>
+                        <ol>
+                            <li>Joining orientation week (MDS)</li>
+                            <li>Joining PERKOM KO</li>
+                            <li>Participated in clubs and activities related to my course</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h3>Images</h3>
+            <div class="row">
+                <div class="column">
+                    <img src="img/sksm.jpg" alt="Image 1">
+		    <p> Me in last year of primary school🥳</p>
+                </div>
+                <div class="column">
+                    <img src="img/secondaryschool.jpg" alt="Image 2">
+                    <p> My Last Day Of SPM Examination🤓</p> 
+                </div>
+                <div class="column">
+                    <img src="img/jcdim1101a.jpg" alt="Image 3">
+		    <p> My First Classmates For Semester 1 😊</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
