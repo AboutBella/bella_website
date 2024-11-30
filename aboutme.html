@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edrieyani's Resume</title>
+    <style>
+        body {
+            background-image:url('img/flower.jpg');	    
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #FF8E8E;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #marquee-container {
+            text-align: center;
+            flex: 1;
+        }
+
+        marquee {
+            font-size: 36px;
+            font-weight: bold;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #clock {
+            font-size: 16px;
+            color: #333;
+        }
+
+        nav {
+            background-color: #FFB3B3;
+            padding: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #FFECEC;
+            border: 1px solid #FF8E8E;
+            width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav table td {
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav table td a {
+            color: #333;
+            font-size: 18px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav table td a:hover {
+            color: #FF4C4C;
+        }
+
+        #content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .section {
+            background-color: #FFF9F9;
+            padding: 20px;
+            border-radius: 10px;
+            width: 60%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        h1, h4 {
+            color: #FF4C4C;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            margin: 0 auto;
+            width: 80%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #E8E8E8;
+        }
+
+        table th {
+            background-color: #FF8E8E;
+            color: #fff;
+        }
+
+        audio {
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+            margin-top: 10px;
+        }
+
+        .cartoon-section img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .cartoon-section {
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section {
+                width: 90%;
+            }
+        }
+
+        /* Callout Styles */
+        .callout {
+            position: fixed;
+            bottom: 35px;
+            right: 20px;
+            margin-left: 20px;
+            max-width: 300px;
+        }
+
+        .callout-header {
+            padding: 25px 15px;
+            background: #FC6C85;
+            font-size: 30px;
+            color: white;
+        }
+
+        .callout-container {
+            padding: 15px;
+            background-color:#FFD1DC;
+            color: black;
+        }
+
+        .closebtn {
+            position: absolute;
+            top: 5px;
+            right: 15px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .closebtn:hover {
+            color: lightgrey;
+        }
+	/* Images Side by Side Styles */
+	* {
+ 	 box-sizing: border-box;
+	}
+
+	.column {
+ 	 float: left; /* Align columns side by side */
+  	width: 33.33%; /* Divide space equally into three columns */
+  	padding: 5px; /* Add padding between images */
+
+	}
+
+	.row::after {
+  	content: ""; /* Clearfix to ensure the container wraps floated elements */
+  	clear: both;
+  	display: table;
+	}
+
+	img {
+  	width: 100%; /* Make images fit the column width */
+  	display: block; /* Prevent inline space below images */
+	}
+
+	#new-image-section {
+    margin: 0 auto; /* Centers the section horizontally */
+    text-align: center; /* Centers the content inside the section */
+    width: 60%; /* Adjust width as needed */
+}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="indexnew.html">
+            <img src="img/logo3.png" alt="Daisy" title="Daisy - Edrieyani's Resume" style="width: 100px;">
+        </a>
+        <div id="marquee-container">
+            <marquee>💖ABOUT ME?💖</marquee>
+        </div>
+        <div id="clock"></div>
+    </header>
+
+    <nav>
+        <table>
+            <tr>
+                <td><a href="indexnew.html">Home</a></td>
+                <td><a href="aboutme.html">About Me</a></td>
+                <td><a href="myfamily.html">My Family</a></td>
+                <td><a href="experience.html">Experience</a></td>
+                <td><a href="education.html">Education</a></td>
+                <td><a href="gallery.html">Gallery</a></td>
+            </tr>
+        </table>
+    </nav>
+
+    <hr>
+
+    <div id="content">
+        <!-- Biodata Section -->
+        <div class="section" id="biodata">
+            <h1><i><b>It's My Biodata🤩 !!</b></i></h1>
+            <center><a target="_blank" href="img/bella3.jpg">
+                <img src="img/bella2.jpg" alt="Edrieyani" style="width:320px">
+            </a></center>
+            <p>
+                Hello, and welcome! My name is Nur Edrieyani Nabila Binti Eddy, and I’m from Batu Pahat, Johor.<br>
+                I’m pursuing a Diploma in Information Management, learning to navigate the world of data and technology.<br>
+                I value genuine connections and fun conversations.<br>
+                Fun fact: I have a playful side known only to those who know me.<br>
+                Thanks for visiting, and feel free to connect and share ideas! 😊
+            </p>
+        </div>
+
+        <!-- Details Section -->
+        <div class="section" id="details">
+            <h4>My Details🧕</h4>
+            <table>
+                <tr><th>NAME</th><td>Nur Edrieyani Nabila Binti Eddy</td></tr>
+                <tr><th>DATE OF BIRTH</th><td>15/07/2004</td></tr>
+                <tr><th>AGE</th><td>20 Years Old</td></tr>
+                <tr><th>GENDER</th><td>Female</td></tr>
+                <tr><th>RACE</th><td>Malay</td></tr>
+                <tr><th>STATE</th><td>Johor</td></tr>
+                <tr><th>CITY</th><td>Batu Pahat</td></tr>
+                <tr><th>HOBBY</th><td>Watching Movies</td></tr>
+            </table>
+        </div>
+
+        <!-- Audio Section -->
+        <div class="section" id="audio-section">
+            <h4>Listen to My Top 3 Favorite Song 🎶</h4>
+	    <img src="img/akon.jpg" alt="Akon" style="width:197px;height:138px; title="Akon Be With You">
+            <h5>1. Be With You by Akon</h5>
+            <audio controls>         
+                <source src="music/akon.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+	   <img src="img/katseye.jpg" alt="Katseye" style="width:197px;height:138px; title="Katseye Touch">
+            <h5>2. Touch by KATSEYE</h5>
+            <audio controls>
+                <source src="music/touch.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+	     <img src="img/rizky.jpg" alt="Rizky" style="width:197px;height:138px; title="Rizky Febian Cuek">
+            <h5>3. Cuek by Rizky Febian</h5>
+            <audio controls>
+                <source src="music/cuek.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <!-- Cartoon Section -->
+        <div class="section cartoon-section" id="cartoon-section">
+            <h4>My Favourite Cartoon Character🥰🐱</h4>
+            <img src="img/pusheen.png" alt="Cartoon Character" title="My Favorite Cartoon Character">
+            <p>
+                One of my favorite cartoon characters is Pusheen. Pusheen is a tubby tabby cat who brings smiles and laughter to people all around the world. She became famous through her animated comics and GIFs posted on Pusheen.com, as well as through her widely used animated stickers on Facebook, Instagram, iMessage, and other platforms.
+            </p>
+        </div>	
+
+    </div>
+
+	<!-- New Image Section -->
+    <div class="section" id="new-image-section">
+        <h4>My Favourite Anime Character🥰</h4>
+
+        
+        <div class="row">
+            <div class="column">
+                <img src="img/levi.gif" alt="Snow" style="width:100%">
+		<p> Levi Ackerman from Attack On Titan ☠️🤺 </p>
+            </div>
+            <div class="column">
+                <img src="img/gojo2.gif" alt="Forest" style="width:100%">
+		<p> Gojo Saturo from Jujutsu Kaisen ☠️🕴️ </p>
+
+            </div>
+            <div class="column">
+                <img src="img/nanami.gif" alt="Mountains" style="width:100%">
+		<p> Nanami Kento from Jujutsu Kaisen ☠️🕴️ </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!-- Callout Section -->
+    <div class="callout">
+        <div class="callout-header">QUOTES OF THE DAY💌</div>
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+        <div class="callout-container">
+            <p>"You are enough just as you are.❤️" – Meghan Markle</p>
+        </div>
+    </div>
+
+</body>
+</html>
