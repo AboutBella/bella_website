@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family - Edrieyani</title>
+    <style>
+        body {
+            background-image:url('img/flower2.jpg');	    
+  	    background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+
+        }
+
+        header {
+            background-color: #FF8E8E;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #marquee-container {
+            text-align: center;
+            flex: 1;
+        }
+
+        marquee {
+            font-size: 36px;
+            font-weight: bold;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+
+        nav {
+            background-color: #FFB3B3;
+            padding: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #FFECEC; /* Table background color */
+            border: 1px solid #FF8E8E;
+            width: 80%; /* Adjust width */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav table td {
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav table td a {
+            color: #333;
+            font-size: 18px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav table td a:hover {
+            color: #FF4C4C;
+        }
+
+        #content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 30px;
+            justify-content: center;
+        }
+
+        .section {
+            background-color: #FFF9F9;
+            padding: 20px;
+            border-radius: 10px;
+            width: 48%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        h1, h3 {
+            color: #FF4C4C;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section {
+                width: 90%;
+
+        }
+    </style>
+</head>
+<body>
+	<iframe style="display:none;"width="560" height="315" src="https://www.youtube.com/embed/Y3eFGpL1q7M?si=foNm20tqZ1zdTb6A?rel=0&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <header>
+        <a href="indexnew.html">
+            <img src="img/logo3.png" alt="Daisy" title="Daisy - Edrieyani's Resume" style="width: 100px;">
+        </a>
+        <div id="marquee-container">
+            <marquee>💓MY FAMILY 💓</marquee>
+        </div>
+    </header>
+
+    <nav>
+        <table>
+            <tr>
+                <td><a href="indexnew.html">Home</a></td>
+                <td><a href="aboutme.html">About Me</a></td>
+                <td><a href="myfamily.html">My Family</a></td>
+                <td><a href="experience.html">Experience</a></td>
+                <td><a href="education.html">Education</a></td>
+                <td><a href="gallery.html">Gallery</a></td>
+            </tr>
+        </table>
+    </nav>
+
+    <div id="content">
+        <div class="section">
+            <h3>My Family 💖</h3>
+            <img src="img/myfamily.jpg" alt="My Family">
+            <p>Introducing the ones who have shaped me into who I am today, my rock, laughter, and endless support system.<br>So grateful for this beautiful family. 💖 #FamilyLove #Blessed 😊</p>
+        </div>
+        <div class="section">
+            <h3>My Parents 💖</h3>
+            <img src="img/myparents.jpg" alt="My Parents">
+            <p>I’d like to introduce my parents, Eddy Bin Abdul Kadir and Lenny Binti Kamsani. They are the foundation of my life and the source of my values and strength.<br>#FamilyLove #Blessed 😊</p>
+        </div>
+        <div class="section">
+            <h3>My Siblings 👶💖</h3>
+            <img src="img/mysibling.jpg" alt="My Siblings">
+            <p>Meet my siblings:I ’d like to introduce my siblings. In the middle of the image is my little brother, Adrian Nabil Iman Bin Eddy, who turns 16 years old this year. He’s currently in secondary school and enjoys playing football and video games during his free time. Next, from the left of the image, is my little sister, Nurin Adriana Binti Eddy, who will finish her primary school this year. She is 12 years old and is passionate about drawing and reading storybooks. <br>They bring so much joy and energy to our family, and I’m incredibly proud of their unique talents and personalities.💖#ProudSister</p>
+        </div>
+
+	<div class="section">
+            <h3>My Pet🐈💖</h3>
+            <img src="img/mypet.jpg" alt="My Pet">
+            <p>Let me also introduce my beloved meow, Panjang. He is a big tabby cat with a playful personality and a knack for napping in the sunniest spots around the house.<br> He brings endless joy to our home with his cute antics and loving nature💖</p>
+        </div>
+
+
+
+        <div class="section">
+            <h3>My Big Family 💖</h3>
+            <img src="img/mybigfamily.jpg" alt="My Big Family">
+            <p>Lastly, I want to introduce my big family from my mama's side. They are a warm and lively group who always come together to celebrate special occasions, share delicious meals, and create cherished memories.💖 #CherishedMemories</p>
+        </div>
+    </div>
+
+	
+
+
+
+</body>
+</html>
