@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Edrieyani's Resume</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Blurred Background Image */
+        .bg-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('img/bell.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: blur(10px); /* Apply blur effect */
+            z-index: -1; /* Make sure the image stays in the background */
+        }
+
+        /* Main Content */
+        header {
+            background-color: rgba(255, 142, 142, 0.8); /* Semi-transparent background */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #marquee-container {
+            text-align: center;
+            flex: 1;
+        }
+
+        marquee {
+            font-size: 36px;
+            font-weight: bold;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #clock {
+            font-size: 20px;
+            color: #333;
+        }
+
+        nav {
+            background-color: #FFB3B3;
+            padding: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #FFECEC;
+            border: 1px solid #FF8E8E;
+            width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav table td {
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav table td a {
+            color: #333;
+            font-size: 18px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav table td a:hover {
+            color: #FF4C4C;
+        }
+
+        .bg-text {
+            background-color: rgba(0,0,0, 0.4); /* Semi-transparent background for text */
+            color: white;
+            font-weight: bold;
+            border: 3px solid #f1f1f1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0; /* Set z-index to 0 to ensure popup can be on top */
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #FFB3B3;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer a {
+            text-decoration: none;
+        }
+
+        .social-icons {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            z-index: 1000;
+        }
+
+        .social-icons img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Callout Styles */
+        .callout {
+            position: fixed;
+            bottom: 35px;
+            right: 20px;
+            margin-left: 20px;
+            max-width: 300px;
+            z-index: 10; /* Make sure it shows above other content */
+        }
+
+        .callout-header {
+            padding: 25px 15px;
+            background: #FC6C85;
+            font-size: 30px;
+            color: white;
+        }
+
+        .callout-container {
+            padding: 15px;
+            background-color: #FFD1DC;
+            color: black;
+        }
+
+        .closebtn {
+            position: absolute;
+            top: 5px;
+            right: 15px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .closebtn:hover {
+            color: lightgrey;
+        }
+
+        /* Popup Modal Styles */
+        .popup {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 10; /* Ensure the popup is in front of other elements */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+        }
+
+        .popup-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 500px;
+            margin: 10% auto;
+            text-align: center;
+        }
+
+        .popup button {
+            background-color: #FF4C4C;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .popup button:hover {
+            background-color: #FF1A1A;
+        }
+	.footer {
+   	   position: sticky;
+           left: 0;
+           bottom: 0;
+           width: 100%;
+           background-color: brown;
+           color: white;
+           text-align: center;
+}
+    </style>
+</head>
+<body>
+  <iframe style="display:none;"width="560" height="315" src="https://www.youtube.com/embed/bLQusz2pkT8?si=pkUiuXMhgB5jr86A?rel=0&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <header>
+
+	<!-- Background Image -->
+    <div class="bg-image"></div>
+
+
+        <a href="indexnew.html">
+            <img src="img/logo3.png" alt="Daisy" title="Daisy - Edrieyani's Resume" style="width: 100px;">
+        </a>
+        <div id="marquee-container">
+            <marquee>💖WELCOME TO MY PERSONAL WEBSITE!!!!💖</marquee>
+        </div>
+        <div id="clock"></div>
+    </header>
+
+    <nav>
+        <table>
+            <tr>
+                <td><a href="index.html">Home</a></td>
+                <td><a href="aboutme.html">About Me</a></td>
+                <td><a href="myfamily.html">My Family</a></td>
+                <td><a href="experience.html">Experience</a></td>
+                <td><a href="education.html">Education</a></td>
+                <td><a href="gallery.html">Gallery</a></td>
+            </tr>
+        </table>
+    </nav>
+
+    <div class="bg-text">
+        <h2>MY RESUME</h2>
+        <h1 style="font-size:50px">I am Edrieyani</h1>
+        <button onclick="openPopup()">Click Me for Popup!</button> <!-- Button to trigger popup -->
+    </div>
+
+    <!-- Callout Message -->
+    <div class="callout">
+        <div class="callout-header">QUOTES OF THE DAY💌</div>
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+        <div class="callout-container">
+            <p>"The only way to do great work is to love what you do.❤️‍🩹" – Steve Jobs</p>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2>Welcome to My Resume Website!</h2>
+            <p>Thank you for visiting my simple website. I'm a newbie here! I hope you're enjoying it.🤭</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+
+	  <img src="img/pusheen6.gif" alt="Your GIF">
+
+            <a href="https://www.instagram.com/yninbella._/profilecard/?igsh=cXBza2k1aXY2bXpz" target="_blank">
+                <img src="img/ig.jpg" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@belll.____" target="_blank">
+                <img src="img/tiktok.png" alt="TikTok">
+            </a>
+
+
+	    <img src="img/pusheen1.gif" alt="Your GIF">
+        </div>
+    </footer>
+
+	
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();
+
+        // Show Popup
+        function openPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        // Close Popup
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+</body>
+</html>
